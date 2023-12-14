@@ -1,0 +1,67 @@
+.modal {
+    background-color: rgb(172, 172, 172);
+    border: 4px solid #292929;
+    border-radius: 10px;
+    box-shadow: 8px 8px #292929;
+    display: none;
+}
+.animation{
+    animation: shake 1s ease 0s 1 normal forwards;
+}
+.show{
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #292929;
+}
+
+.modal-title {
+    margin: 0px;
+    margin-left: 10px;
+    color: white;
+}
+
+.btn-close {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    margin: none;
+    padding: none;
+}
+
+.modal-text {
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
